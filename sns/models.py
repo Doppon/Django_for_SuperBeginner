@@ -18,7 +18,7 @@ class Message(models.Model):
 		return Message.objects.get(id=self.share_id)
 
 	class Meta:
-		ordering = ('-pub_date')
+		ordering = ('-pub_date',)
 	
 
 
