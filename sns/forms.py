@@ -11,6 +11,8 @@ from django.contrib.auth.models import User
 # Goodのフォーム(使うときに記述)
 
 # 検索フォーム
+class SearchForm(forms.Form):
+  search = forms.CharField(max_length=100)
 
 # Groupのチェックボックスフォーム
 
